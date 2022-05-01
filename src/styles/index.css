@@ -1,0 +1,21 @@
+@import './vars.css';
+
+* {
+  font-family: 'Inter';
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'),
+    url(../../public/fonts/Inter-Regular.ttf) format('truetype');
+}
+
+.transition-container {
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: background-color, color;
+  -o-transition-duration: 1s;
+}

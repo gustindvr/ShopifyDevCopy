@@ -1,42 +1,51 @@
-import React from 'react';
-import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
-} from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import React, { useContext } from 'react';
 
-function App() {
+import { Container, Grid, GridItem } from '@chakra-ui/react';
+
+import { ThemeContext } from './components/contexts/ThemeContext/index.jsx';
+import Header from './components/molecules/Header';
+
+const App = () => {
+  const { themeSelected } = useContext(ThemeContext);
+
+  console.log(themeSelected);
+
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
-            <Logo h="40vmin" pointerEvents="none" />
-            <Text>
-              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-            </Text>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn Chakra
-            </Link>
-          </VStack>
-        </Grid>
-      </Box>
-    </ChakraProvider>
+    <Container
+      maxWidth="100vw"
+      backgroundColor={themeSelected?.background}
+      h="100vh"
+      w="100vw"
+      color={themeSelected?.color}
+      className="transition-container"
+    >
+      <Grid templateColumns="repeat(4, 1fr)" gap={2}>
+        <GridItem colSpan={4} h="100%" w="100%">
+          <Header />
+        </GridItem>
+        <GridItem colSpan={2} h="100%" w="100%">
+          {' '}
+          Lat Izq
+        </GridItem>
+        <GridItem backgroundColor="pink.400" colSpan={2} h="100%" w="100%">
+          {' '}
+          Imagen
+        </GridItem>
+        <GridItem backgroundColor="pink.600" colSpan={4} h="100%" w="100%">
+          {' '}
+          App Store
+        </GridItem>
+        <GridItem backgroundColor="pink.700" colSpan={4} h="100%" w="100%">
+          {' '}
+          Tools
+        </GridItem>
+        <GridItem backgroundColor="pink.800" colSpan={4} h="100%" w="100%">
+          {' '}
+          Footer{' '}
+        </GridItem>
+      </Grid>
+    </Container>
   );
-}
+};
 
 export default App;
