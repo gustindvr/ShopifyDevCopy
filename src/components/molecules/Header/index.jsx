@@ -17,7 +17,7 @@ const Header = () => {
         <GridItem colSpan={1} hidden={searchBarOpen}>
           <Navbar searchBarOpen={searchBarOpen} />
         </GridItem>
-        <GridItem colSpan={searchBarOpen ? 3 : 10} textAlign="end">
+        <GridItem colSpan={searchBarOpen ? 11 : 10} textAlign="end">
           <LoginAndSearch
             setSearchBarOpen={setSearchBarOpen}
             searchBarOpen={searchBarOpen}

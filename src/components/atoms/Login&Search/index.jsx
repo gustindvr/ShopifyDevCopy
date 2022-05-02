@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 
 import {
   Box,
+  Button,
   Flex,
   Input,
   InputGroup,
@@ -11,6 +12,7 @@ import {
 
 import { MoonIcon, SearchIcon, SunIcon } from '@chakra-ui/icons';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import { Link } from 'react-router-dom';
 
 const theme = {
   color: 'var(--text-principal-light)',
@@ -53,18 +55,31 @@ const LoginAndSearch = ({ searchBarOpen, setSearchBarOpen }) => {
           }
         />
       </InputGroup>
+      {!searchBarOpen && (
+        <>
+          {themeSelected?.background === 'var(--background-dark)' ? (
+            <SunIcon
+              onClick={() => setThemeSelected(theme)}
+              color="yellow.600"
+            />
+          ) : (
+            <MoonIcon
+              onClick={() =>
+                setThemeSelected({
+                  color: 'var(--text-principal-dark)',
+                  background: 'var(--background-dark)',
+                })
+              }
+            />
+          )}
 
-      {themeSelected?.background === 'var(--background-dark)' ? (
-        <SunIcon onClick={() => setThemeSelected(theme)} color="yellow.600" />
-      ) : (
-        <MoonIcon
-          onClick={() =>
-            setThemeSelected({
-              color: 'var(--text-principal-dark)',
-              background: 'var(--background-dark)',
-            })
-          }
-        />
+          <Button m="1em">
+            <Link to="/log-in">Log in</Link>
+          </Button>
+          <Button>
+            <Link to="/sign-up">Sign up</Link>
+          </Button>
+        </>
       )}
     </Flex>
   );
