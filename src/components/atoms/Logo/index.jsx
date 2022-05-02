@@ -15,7 +15,7 @@ const Logo = () => {
           <Image
             src="https://cdn.shopify.com/shopifycloud/shopify_dev/assets/shopify-dev-logo-dark-ebe46baa056247a6245a8c2f3f5643850171ff8f505f2cb61303efe710b65390.svg"
             alt="Logo shopify"
-            w="90px"
+            w="60px"
           />
         ) : (
           <Image
