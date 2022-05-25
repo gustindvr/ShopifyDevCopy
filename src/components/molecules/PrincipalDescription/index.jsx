@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { Box, Container, Heading, Link, Text } from '@chakra-ui/react';
+import { Box, Container, Heading, Text } from '@chakra-ui/react';
 
 import Title from '../../atoms/Title';
 import SolidLink from '../../atoms/SolidLink';
+import Cards from '../Cards';
 
 const PrincipalDescription = () => {
   return (
@@ -83,6 +84,8 @@ const PrincipalDescription = () => {
           to connect your platform and its users to millions of Shopify
           merchants and their products.
         </Text>
+
+        <Cards />
       </Box>
     </Container>
   );
