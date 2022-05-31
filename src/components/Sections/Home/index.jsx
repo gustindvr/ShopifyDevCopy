@@ -7,6 +7,7 @@ import Header from '../../organisms/Header/index.jsx';
 import PrincipalDescription from '../../organisms/PrincipalDescription/index.jsx';
 import PrincipalImage from '../../atoms/PrincipalImage/index.jsx';
 import AppStore from '../../organisms/AppStore/index.jsx';
+import ToolsCards from '../../molecules/ToolsCards/index.jsx';
 
 const Home = () => {
   const { themeSelected } = useContext(ThemeContext);
@@ -31,9 +32,8 @@ const Home = () => {
         <GridItem colSpan={4} h="100%" w="100%">
           <AppStore />
         </GridItem>
-        <GridItem backgroundColor="pink.700" colSpan={4} h="100%" w="100%">
-          {' '}
-          Tools
+        <GridItem colSpan={4} h="100%" w="100%">
+          <ToolsCards />
         </GridItem>
         <GridItem backgroundColor="pink.800" colSpan={4} h="100%" w="100%">
           {' '}
