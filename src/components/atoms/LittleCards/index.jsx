@@ -10,7 +10,7 @@ const LittleCards = ({ url, text }) => {
       minW="270px"
       p="2.3em 2.3em 2.3em 1em"
     >
-      <Image src={url} />
+      <Image src={url} w="50px" h="50px" />
       <Text ml="1em">{text}</Text>
     </Button>
   );

@@ -6,6 +6,7 @@ import { Box, Grid, GridItem } from '@chakra-ui/react';
 import Header from '../../organisms/Header/index.jsx';
 import PrincipalDescription from '../../organisms/PrincipalDescription/index.jsx';
 import PrincipalImage from '../../atoms/PrincipalImage/index.jsx';
+import AppStore from '../../organisms/AppStore/index.jsx';
 
 const Home = () => {
   const { themeSelected } = useContext(ThemeContext);
@@ -27,9 +28,8 @@ const Home = () => {
         <GridItem colSpan={2} h="100%" w="100%">
           <PrincipalImage />
         </GridItem>
-        <GridItem backgroundColor="pink.600" colSpan={4} h="100%" w="100%">
-          {' '}
-          App Store
+        <GridItem colSpan={4} h="100%" w="100%">
+          <AppStore />
         </GridItem>
         <GridItem backgroundColor="pink.700" colSpan={4} h="100%" w="100%">
           {' '}

@@ -13,8 +13,8 @@ const Cards = () => {
       </Heading>
       <Flex flexFlow="row wrap" m={0}>
         {cardsContainer.map((card, index) => (
-          <Box mr="1em" mb="1em">
-            <LittleCards url={card.image} text={card.title} key={index} />
+          <Box mr="1em" mb="1em" key={index}>
+            <LittleCards url={card.image} text={card.title} />
           </Box>
         ))}
       </Flex>

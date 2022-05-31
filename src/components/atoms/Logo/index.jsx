@@ -6,8 +6,6 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 const Logo = () => {
   const { themeSelected } = useContext(ThemeContext);
 
-  console.log(themeSelected);
-
   return (
     <Button _hover={{ backgroundColor: 'none' }}>
       <Link to="/" fontWeight="bold">
