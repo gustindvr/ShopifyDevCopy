@@ -3,11 +3,12 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext/index.jsx';
 
 import { Box, Grid, GridItem } from '@chakra-ui/react';
-import Header from '../../organisms/Header/index.jsx';
-import PrincipalDescription from '../../organisms/PrincipalDescription/index.jsx';
-import PrincipalImage from '../../atoms/PrincipalImage/index.jsx';
-import AppStore from '../../organisms/AppStore/index.jsx';
-import ToolsCards from '../../molecules/ToolsCards/index.jsx';
+import Header from '../../organisms/Header';
+import PrincipalDescription from '../../organisms/PrincipalDescription';
+import PrincipalImage from '../../atoms/PrincipalImage';
+import AppStore from '../../organisms/AppStore';
+import ToolsCards from '../../molecules/ToolsCards';
+import Footer from '../../organisms/Footer';
 
 const Home = () => {
   const { themeSelected } = useContext(ThemeContext);
@@ -35,9 +36,8 @@ const Home = () => {
         <GridItem colSpan={4} h="100%" w="100%">
           <ToolsCards />
         </GridItem>
-        <GridItem backgroundColor="pink.800" colSpan={4} h="100%" w="100%">
-          {' '}
-          Footer{' '}
+        <GridItem colSpan={4} h="100%" w="100%">
+          <Footer />
         </GridItem>
       </Grid>
     </Box>
