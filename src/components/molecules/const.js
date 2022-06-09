@@ -62,3 +62,113 @@ export const toolsInfo = [
     text: 'Educational resources and product previews',
   },
 ];
+
+export const linksFooter = [
+  {
+    title: 'News and updates',
+    links: [
+      {
+        text: 'Developer changelog',
+        url: 'https://shopify.dev/changelog',
+      },
+      { text: 'Shopify status', url: 'https://www.shopifystatus.com/' },
+    ],
+  },
+  {
+    title: 'Blogs',
+    links: [
+      {
+        text: 'Partner blog',
+        url: 'https://www.shopify.com/partners/blog?shpxid=45f4cc9c-DFC9-4F0B-E5BE-3D68D3E10411',
+      },
+      { text: 'Engineering blog', url: 'https://shopify.engineering/' },
+      {
+        text: 'UX blog',
+        url: 'https://ux.shopify.com/?shpxid=45f4cc9c-DFC9-4F0B-E5BE-3D68D3E10411',
+      },
+    ],
+  },
+  {
+    title: 'Community',
+    links: [
+      {
+        text: 'Developer forums',
+        url: 'https://community.shopify.com/c/partners-and-developers/ct-p/appdev?shpxid=46083f48-0255-4752-00A0-8F5058791D19',
+      },
+      { text: 'Devs Discord', url: 'https://discord.com/invite/shopifydevs' },
+      {
+        text: 'Facebook group',
+        url: 'https://www.facebook.com/shopifypartners/',
+      },
+    ],
+  },
+  {
+    title: 'Social',
+    links: [
+      { text: 'Twitch', url: 'https://www.twitch.tv/shopifydevs' },
+      { text: 'YouTube', url: 'https://www.youtube.com/c/shopifydevs' },
+      { text: 'Twitter', url: 'https://twitter.com/ShopifyDevs' },
+    ],
+  },
+  {
+    title: 'Events',
+    links: [
+      {
+        text: 'Unite',
+        url: 'https://unite.shopify.com/?shpxid=46083f48-0255-4752-00A0-8F5058791D19',
+      },
+      {
+        text: 'Meetups',
+        url: 'https://events.shopify.com/partners?shpxid=46083f48-0255-4752-00A0-8F5058791D19',
+      },
+      {
+        text: 'Partner Town Hall',
+        url: 'https://events.shopify.com/partnertownhall?shpxid=46083f48-0255-4752-00A0-8F5058791D19',
+      },
+    ],
+  },
+  {
+    title: 'Legal',
+    links: [
+      {
+        text: 'Terms of Service',
+        url: 'https://www.shopify.com/legal/terms?shpxid=46083f48-0255-4752-00A0-8F5058791D19',
+      },
+      {
+        text: 'API Terms of Service',
+        url: 'https://www.shopify.com/legal/api-terms?shpxid=46083f48-0255-4752-00A0-8F5058791D19',
+      },
+      {
+        text: 'Privacy policy',
+        url: 'https://www.shopify.com/legal/privacy?shpxid=46083f48-0255-4752-00A0-8F5058791D19',
+      },
+      {
+        text: 'Partner program agreement',
+        url: 'https://www.shopify.com/partners/terms?shpxid=46083f48-0255-4752-00A0-8F5058791D19',
+      },
+    ],
+  },
+];
+
+export const linksFooterNav = [
+  {
+    title: 'About Shopify',
+    url: 'https://www.shopify.com/about?shpxid=4658763f-5BA1-49BF-C724-C49ADC63CEA2',
+  },
+  {
+    title: 'Shopify Plus',
+    url: 'https://www.shopify.com/plus?shpxid=4658763f-5BA1-49BF-C724-C49ADC63CEA2',
+  },
+  {
+    title: 'Careers',
+    url: 'https://www.shopify.com/careers?shpxid=4658763f-5BA1-49BF-C724-C49ADC63CEA2',
+  },
+  {
+    title: 'Investors',
+    url: 'https://investors.shopify.com/home/default.aspx',
+  },
+  {
+    title: 'Press and Media',
+    url: 'https://news.shopify.com/?shpxid=4658763f-5BA1-49BF-C724-C49ADC63CEA2',
+  },
+];
